@@ -1,0 +1,14 @@
+.env
+__pycache__/
+*.pyc
+*.pyo
+output/
+!output/.gitkeep
+data/*.db
+.idea/
+.vscode/
+*.egg-info/
+dist/
+build/
+.mypy_cache/
+.pytest_cache/

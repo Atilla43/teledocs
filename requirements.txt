@@ -1,0 +1,6 @@
+aiogram==3.13.1
+openai==1.56.0
+python-dotenv==1.0.1
+pydantic-settings==2.6.1
+docxtpl==0.18.0
+aiosqlite==0.20.0

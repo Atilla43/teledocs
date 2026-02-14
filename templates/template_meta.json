@@ -1,0 +1,209 @@
+{
+  "service_agreement": {
+    "display_name": "Договор оказания услуг",
+    "filename": "service_agreement.docx",
+    "description": "Договор на оказание услуг между исполнителем и заказчиком",
+    "fields": [
+      {
+        "key": "executor_name",
+        "label": "ФИО исполнителя",
+        "prompt_ru": "Введите ФИО исполнителя (например, Иванов Иван Иванович):",
+        "type": "string",
+        "required": true
+      },
+      {
+        "key": "executor_inn",
+        "label": "ИНН исполнителя",
+        "prompt_ru": "Введите ИНН исполнителя (10 или 12 цифр):",
+        "type": "string",
+        "required": true,
+        "validation": "^\\d{10,12}$"
+      },
+      {
+        "key": "executor_address",
+        "label": "Адрес исполнителя",
+        "prompt_ru": "Введите адрес исполнителя:",
+        "type": "string",
+        "required": true
+      },
+      {
+        "key": "client_name",
+        "label": "Наименование заказчика",
+        "prompt_ru": "Введите наименование заказчика (ФИО или название компании):",
+        "type": "string",
+        "required": true
+      },
+      {
+        "key": "client_inn",
+        "label": "ИНН заказчика",
+        "prompt_ru": "Введите ИНН заказчика (10 или 12 цифр):",
+        "type": "string",
+        "required": true,
+        "validation": "^\\d{10,12}$"
+      },
+      {
+        "key": "client_address",
+        "label": "Адрес заказчика",
+        "prompt_ru": "Введите адрес заказчика:",
+        "type": "string",
+        "required": true
+      },
+      {
+        "key": "service_description",
+        "label": "Описание услуг",
+        "prompt_ru": "Опишите оказываемые услуги:",
+        "type": "text",
+        "required": true
+      },
+      {
+        "key": "contract_amount",
+        "label": "Сумма договора (руб.)",
+        "prompt_ru": "Введите сумму договора в рублях (только число):",
+        "type": "string",
+        "required": true,
+        "validation": "^\\d+([.,]\\d{1,2})?$"
+      },
+      {
+        "key": "contract_date",
+        "label": "Дата договора",
+        "prompt_ru": "Введите дату договора (ДД.ММ.ГГГГ):",
+        "type": "date",
+        "required": true,
+        "default": "today"
+      }
+    ]
+  },
+  "invoice": {
+    "display_name": "Счёт на оплату",
+    "filename": "invoice.docx",
+    "description": "Счёт на оплату услуг или товаров",
+    "fields": [
+      {
+        "key": "executor_name",
+        "label": "Наименование получателя",
+        "prompt_ru": "Введите наименование получателя платежа (ФИО или название компании):",
+        "type": "string",
+        "required": true
+      },
+      {
+        "key": "executor_inn",
+        "label": "ИНН получателя",
+        "prompt_ru": "Введите ИНН получателя (10 или 12 цифр):",
+        "type": "string",
+        "required": true,
+        "validation": "^\\d{10,12}$"
+      },
+      {
+        "key": "executor_bank",
+        "label": "Банк получателя",
+        "prompt_ru": "Введите название банка получателя:",
+        "type": "string",
+        "required": true
+      },
+      {
+        "key": "executor_account",
+        "label": "Расчётный счёт",
+        "prompt_ru": "Введите расчётный счёт (20 цифр):",
+        "type": "string",
+        "required": true,
+        "validation": "^\\d{20}$"
+      },
+      {
+        "key": "executor_bik",
+        "label": "БИК банка",
+        "prompt_ru": "Введите БИК банка (9 цифр):",
+        "type": "string",
+        "required": true,
+        "validation": "^\\d{9}$"
+      },
+      {
+        "key": "client_name",
+        "label": "Наименование плательщика",
+        "prompt_ru": "Введите наименование плательщика:",
+        "type": "string",
+        "required": true
+      },
+      {
+        "key": "service_description",
+        "label": "Назначение платежа",
+        "prompt_ru": "Введите назначение платежа (за что выставлен счёт):",
+        "type": "text",
+        "required": true
+      },
+      {
+        "key": "amount",
+        "label": "Сумма (руб.)",
+        "prompt_ru": "Введите сумму к оплате в рублях (только число):",
+        "type": "string",
+        "required": true,
+        "validation": "^\\d+([.,]\\d{1,2})?$"
+      },
+      {
+        "key": "invoice_date",
+        "label": "Дата счёта",
+        "prompt_ru": "Введите дату счёта (ДД.ММ.ГГГГ):",
+        "type": "date",
+        "required": true,
+        "default": "today"
+      }
+    ]
+  },
+  "act_of_work": {
+    "display_name": "Акт выполненных работ",
+    "filename": "act_of_work.docx",
+    "description": "Акт приёма-передачи выполненных работ/услуг",
+    "fields": [
+      {
+        "key": "executor_name",
+        "label": "ФИО/наименование исполнителя",
+        "prompt_ru": "Введите ФИО или наименование исполнителя:",
+        "type": "string",
+        "required": true
+      },
+      {
+        "key": "client_name",
+        "label": "ФИО/наименование заказчика",
+        "prompt_ru": "Введите ФИО или наименование заказчика:",
+        "type": "string",
+        "required": true
+      },
+      {
+        "key": "contract_number",
+        "label": "Номер договора",
+        "prompt_ru": "Введите номер основного договора:",
+        "type": "string",
+        "required": true
+      },
+      {
+        "key": "contract_date",
+        "label": "Дата договора",
+        "prompt_ru": "Введите дату основного договора (ДД.ММ.ГГГГ):",
+        "type": "date",
+        "required": true
+      },
+      {
+        "key": "work_description",
+        "label": "Описание выполненных работ",
+        "prompt_ru": "Опишите выполненные работы/услуги:",
+        "type": "text",
+        "required": true
+      },
+      {
+        "key": "amount",
+        "label": "Сумма (руб.)",
+        "prompt_ru": "Введите сумму за выполненные работы в рублях (только число):",
+        "type": "string",
+        "required": true,
+        "validation": "^\\d+([.,]\\d{1,2})?$"
+      },
+      {
+        "key": "act_date",
+        "label": "Дата акта",
+        "prompt_ru": "Введите дату акта (ДД.ММ.ГГГГ):",
+        "type": "date",
+        "required": true,
+        "default": "today"
+      }
+    ]
+  }
+}
