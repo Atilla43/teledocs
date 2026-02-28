@@ -17,7 +17,11 @@ class TemplateRegistry:
 
     def list_templates(self) -> list[dict]:
         return [
-            {"id": tid, "display_name": tmpl["display_name"]}
+            {
+                "id": tid,
+                "display_name": tmpl["display_name"],
+                "icon": tmpl.get("icon", "📄"),
+            }
             for tid, tmpl in self._meta.items()
         ]
 
@@ -38,8 +42,10 @@ class TemplateRegistry:
 
     def validate_field(self, field_meta: dict, value: str) -> str | None:
         """Validate a field value. Returns error message or None if valid."""
-        if field_meta.get("required") and not value.strip():
-            return f"Поле «{field_meta['label']}» обязательно для заполнения."
+        if not value.strip():
+            if field_meta.get("required"):
+                return f"Поле «{field_meta['label']}» обязательно для заполнения."
+            return None  # optional field, empty is OK
 
         pattern = field_meta.get("validation")
         if pattern and not re.match(pattern, value.strip()):

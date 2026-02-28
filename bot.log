@@ -1,0 +1,25 @@
+2026-02-16 12:20:23,972 - root - INFO - Bot started
+2026-02-16 12:20:23,972 - aiogram.dispatcher - INFO - Start polling
+2026-02-16 12:20:24,383 - aiogram.dispatcher - INFO - Run polling for bot @paperFrogBot id=8526361920 - 'PaperFrog'
+2026-02-16 12:21:54,528 - aiogram.event - INFO - Update id=223217037 is handled. Duration 358 ms by bot id=8526361920
+2026-02-16 12:22:12,645 - aiogram.event - INFO - Update id=223217038 is handled. Duration 812 ms by bot id=8526361920
+2026-02-16 12:22:43,758 - aiogram.event - INFO - Update id=223217039 is handled. Duration 391 ms by bot id=8526361920
+2026-02-16 12:22:51,322 - aiogram.event - INFO - Update id=223217040 is handled. Duration 328 ms by bot id=8526361920
+2026-02-16 12:22:52,457 - aiogram.event - INFO - Update id=223217041 is handled. Duration 312 ms by bot id=8526361920
+2026-02-16 12:22:54,707 - aiogram.event - INFO - Update id=223217042 is handled. Duration 125 ms by bot id=8526361920
+2026-02-16 12:25:16,052 - aiogram.event - INFO - Update id=223217043 is handled. Duration 391 ms by bot id=8526361920
+2026-02-16 12:25:29,943 - aiogram.event - INFO - Update id=223217044 is handled. Duration 140 ms by bot id=8526361920
+2026-02-16 12:25:32,396 - aiogram.event - INFO - Update id=223217045 is handled. Duration 155 ms by bot id=8526361920
+2026-02-16 12:25:35,898 - aiogram.event - INFO - Update id=223217046 is handled. Duration 437 ms by bot id=8526361920
+2026-02-16 12:25:46,297 - aiogram.event - INFO - Update id=223217047 is handled. Duration 125 ms by bot id=8526361920
+2026-02-16 12:25:50,273 - aiogram.event - INFO - Update id=223217048 is handled. Duration 514 ms by bot id=8526361920
+2026-02-16 12:26:00,191 - aiogram.event - INFO - Update id=223217049 is handled. Duration 157 ms by bot id=8526361920
+2026-02-16 12:26:02,901 - aiogram.event - INFO - Update id=223217050 is handled. Duration 139 ms by bot id=8526361920
+2026-02-16 12:26:16,509 - aiogram.event - INFO - Update id=223217051 is handled. Duration 187 ms by bot id=8526361920
+2026-02-16 12:26:26,778 - aiogram.event - INFO - Update id=223217052 is handled. Duration 125 ms by bot id=8526361920
+2026-02-16 12:27:37,315 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2026-02-16 12:27:37,315 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8526361920)
+2026-02-16 12:27:57,587 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-02-16 12:27:57,587 - aiogram.dispatcher - WARNING - Sleep for 1.307361 seconds and try again... (tryings = 1, bot id = 8526361920)
+2026-02-16 12:27:59,208 - aiogram.dispatcher - INFO - Connection established (tryings = 2, bot id = 8526361920)
+2026-02-16 12:27:59,568 - aiogram.event - INFO - Update id=223217053 is handled. Duration 359 ms by bot id=8526361920

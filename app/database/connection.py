@@ -29,6 +29,30 @@ CREATE TABLE IF NOT EXISTS generated_documents (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
+CREATE TABLE IF NOT EXISTS user_templates (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_id INTEGER NOT NULL REFERENCES users(id),
+    template_name TEXT NOT NULL,
+    filename TEXT NOT NULL,
+    fields_json TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE INDEX IF NOT EXISTS idx_user_templates_user ON user_templates(user_id);
+
+CREATE TABLE IF NOT EXISTS whitelist (
+    user_id INTEGER PRIMARY KEY,
+    added_by INTEGER NOT NULL,
+    note TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS user_requisites (
+    user_id INTEGER PRIMARY KEY REFERENCES users(id),
+    requisites_json TEXT NOT NULL,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
 CREATE INDEX IF NOT EXISTS idx_conversation_user ON conversation_history(user_id);
 CREATE INDEX IF NOT EXISTS idx_documents_user ON generated_documents(user_id);
 """
